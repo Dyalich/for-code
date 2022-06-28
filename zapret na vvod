@@ -1,3 +1,10 @@
 Spisocheck.ReadOnly:= not (Key in ['0'..'9',#8]); // запрет на ввод символов,букв.
-BO.ReadOnly:= not (Key in ['0'..'9',#8]);    
+BO.ReadOnly:= not (Key in ['0'..'9',#8]);   
+
+
+procedure Form1.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
 if not(key in['a'..'z',#8,'A'..'Z'])then key:=#0;
+end;
+
+
