@@ -1,0 +1,2 @@
+Spisocheck.ReadOnly:= not (Key in ['0'..'9',#8]); // запрет на ввод символов,букв,цифр   
+Spisocheck.ReadOnly:= not (Key in ['0'..'9',#8]); // запрет на ввод символов,букв,цифр  
